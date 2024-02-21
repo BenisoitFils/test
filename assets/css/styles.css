@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('../img/logo2.jpeg');
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: calc(30% - 10px);
+    float: left;
+    margin-right: 10px;
+    animation: scale 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: filter 0.3s ease;
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.btn-pago {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pago:hover {
+    background-color: #ff0000d4;
+}
+
+footer {
+    background-color: gray;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.info-contacto, .redes-sociales {
+    display: flex;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+        margin-right: 0;
+        margin-bottom: 10px;
+        float: none;
+    }
+}
+
+
+.card img:hover {
+    filter: grayscale(0%); 
+}
